@@ -15,8 +15,8 @@ public class Calculadora {
         System.out.println(num1 * num2);
     }
 
-    public double divideDoisNumeros(double num1, double num2){
-        if(num2 == 0) {
+    public double divideDoisNumeros(double num1, double num2) {
+        if (num2 == 0) {
             return 0;
         }
         return num1 / num2;
@@ -34,7 +34,7 @@ public class Calculadora {
         if (num2 == 0) {
             System.out.println("Não existe divisão por zero");
         }
-        System.out.println(num1/num2);
+        System.out.println(num1 / num2);
     }
 
     public void altaraDoisNumeros(int num1, int num2) {
@@ -43,5 +43,21 @@ public class Calculadora {
         System.out.println("Dentro do alteraDoisNumeros");
         System.out.println("Num1 " + num1);
         System.out.println("Num2 " + num2);
+    }
+
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
+    }
+
+    public void somaVarAegs(int... numeros) {
+        int soma = 0;
+        for (int num : numeros) {
+            soma += num;
+        }
+        System.out.println(soma);
     }
 }
