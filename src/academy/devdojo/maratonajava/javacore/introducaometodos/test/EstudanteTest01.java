@@ -14,11 +14,17 @@ public class EstudanteTest01 {
         estudante01.idade = 15;
         estudante01.sexo = 'M';
 
-        System.out.println("---------------------");
-
         estudante02.nome = "Sakura";
         estudante02.idade = 16;
         estudante02.sexo = 'F';
+
+        impressora.imprime(estudante01);
+
+        System.out.println("");
+
+        impressora.imprime(estudante02);
+
+        System.out.println("---------------------");
 
         impressora.imprime(estudante01);
 
